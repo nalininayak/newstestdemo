@@ -1,0 +1,23 @@
+version: 2.1
+
+# Placeholder pipeline — the repo currently contains no source code,
+# no language runtime, and no package manager. This job checks out
+# the repository and echoes a success message so the first pipeline
+# passes. Replace or extend it once real project files are added.
+
+jobs:
+  placeholder:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - run:
+          name: Confirm checkout
+          command: |
+            echo "Repository checked out successfully."
+            ls -la
+
+workflows:
+  build:
+    jobs:
+      - placeholder
