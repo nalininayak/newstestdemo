@@ -11,7 +11,7 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
-      - run:
+      - run
           name: Confirm checkout
           command: |
             echo "Repository checked out successfully and we have pushed it again for learning P"
