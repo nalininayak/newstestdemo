@@ -14,7 +14,7 @@ jobs:
       - run:
           name: Confirm checkout
           command: |
-            echo "Repository checked out successfully."
+            echo "Repository checked out successfully and we have pushed it again for learning P"
             ls -la
 
 workflows:
